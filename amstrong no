@@ -1,0 +1,20 @@
+int main()
+{
+        int n,num,rem,sum=0;
+    printf("enter a three digit no");
+    scanf("%d",&n);
+    num=n;
+    while(num!=0)
+    {
+        rem=num%10;
+        sum=sum+rem*rem*rem;
+        num=num%10;
+    }
+    if(sum==n)
+    printf("%d is amstrong no",n);
+    else
+    printf("%d is not amstrong no",n);
+    return 0;
+}
+
+ 
